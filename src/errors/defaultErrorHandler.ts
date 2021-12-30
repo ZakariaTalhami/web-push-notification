@@ -4,7 +4,7 @@ export async function errorHandler(
   err: Error,
   req: Request,
   res: Response,
-  next: NextFunction
+  next: NextFunction // eslint-disable-line
 ) {
   console.error(err.stack);
   res.status(500).send({
