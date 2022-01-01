@@ -1,1 +1,1 @@
-# Express Typescript Template
+# Web Push Notification Prototype

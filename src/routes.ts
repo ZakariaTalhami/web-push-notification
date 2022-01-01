@@ -1,10 +1,10 @@
 import { Express } from "express";
-import { exampleRoutes } from "./example";
+import { webPushRoutes } from "./webpush";
 
-const allRoutes = [...exampleRoutes];
+const allRoutes = [...webPushRoutes];
 
 export async function applyRouters(app: Express) {
-    allRoutes.forEach(router => {
-        app.use(router);
-    });
+  allRoutes.forEach((router) => {
+    app.use(router);
+  });
 }
